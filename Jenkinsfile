@@ -6,9 +6,9 @@ pipeline {
    
     stages {
         stage('Hello') {
-            when {
-                    expression {params.CHOICE == 'DEV'}
-            }
+//             when {
+//                     expression {params.CHOICE == 'DEV'}
+//             }
             steps {
                 input('Do you want to proceed?')
                 echo 'Hello World DEV'
@@ -16,9 +16,9 @@ pipeline {
             }
         }
         stage('build'){
-             when {
-                    expression {params.CHOICE == 'DEV'}
-            }
+//              when {
+//                     expression {params.CHOICE == 'DEV'}
+//             }
             stages {
                 stage ( 'stsges in stsge 1') {
                     steps {
@@ -54,9 +54,9 @@ pipeline {
             }
         }
         stage('builqwerd'){
-             when {
-                    expression {params.CHOICE == 'STAGE'}
-            }
+//              when {
+//                     expression {params.CHOICE == 'STAGE'}
+//             }
             stages {
                 stage ( 'stsges in stsge 1') {
                     steps {
