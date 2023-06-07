@@ -24,11 +24,11 @@ pipeline {
                     steps {
                         // sh "mkdir test"
                         // sh "touch ./test/tet.txt"
-                        sh " echo ${params.CHOICE} > ./test/tet.txt"
+                        sh " echo dfg > tet.txt"
                         // def exixts = fileExists 'tet.txt'
                         script{
-                        if (fileExists ('./test/tet.txt') ) {
-                            sh "rm ./test/tet.txt "
+                        if (fileExists ('tet.txt') ) {
+//                             sh "rm ./test/tet.txt "
                             
                         } else {
                             sh "echo dont exuixsts"
@@ -38,12 +38,12 @@ pipeline {
                 }
                  stage ( 'stsges in stsge 2') {
                     steps {
-                     echo "in ${params.CHOICE}"
+                     echo "in df"
                     }
                 }
                  stage ( 'stsges in stsge 3') {
                     steps {
-                     echo "in ${params.CHOICE}"
+                     echo "in sdf"
                     }
                 }
             }
@@ -60,17 +60,17 @@ pipeline {
             stages {
                 stage ( 'stsges in stsge 1') {
                     steps {
-                    echo "in ${params.CHOICE}"
+                    echo "in sdf"
                     }
                 }
                  stage ( 'stsges in stsge 2') {
                     steps {
-                     echo "in ${params.CHOICE}"
+                     echo "in sdf"
                     }
                 }
                  stage ( 'stsges in stsge 3') {
                     steps {
-                     echo "in ${params.CHOICE}"
+                     echo "in sdf"
                     }
                 }
             }
