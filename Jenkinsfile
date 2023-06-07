@@ -10,7 +10,7 @@ pipeline {
 //                     expression {params.CHOICE == 'DEV'}
 //             }
             steps {
-                input('Do you want to proceed?')
+//                 input('Do you want to proceed?')
                 echo 'Hello World DEV'
                 
             }
