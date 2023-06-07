@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    parameters {
-        //  choice(name: 'CHOICE', choices: ['DEV', 'STAGE', 'PROD'], description: 'Pick Environment')
-    }
+//     parameters {
+//         //  choice(name: 'CHOICE', choices: ['DEV', 'STAGE', 'PROD'], description: 'Pick Environment')
+//     }
    
     stages {
         stage('Hello') {
